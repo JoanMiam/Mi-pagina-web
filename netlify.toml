@@ -1,0 +1,9 @@
+# Configuración de Netlify para sitio estático
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
