@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta Tags Esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portafolio personal de Joan Miam - Desarrollador de Software especializado en desarrollo web">
+    <meta name="keywords" content="Joan Miam, desarrollador web, ingeniería de software, portafolio, programador">
+    <meta name="author" content="Joan Miam">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Joan Miam - Desarrollador de Software">
+    <meta property="og:description" content="Portafolio personal de Joan Miam - Desarrollador de Software">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Joan Miam - Desarrollador de Software">
+
+    <title>Joan Miam | Desarrollador de Software</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init('D-Lk7Hwfa0-o1Ep8p');
+    </script>
+</head>
+
+<body>
+    <!-- Efectos Visuales -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="cursor-glow"></div>
+
+    <!-- ========================= -->
+    <!-- NAVEGACIÓN -->
+    <!-- ========================= -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="#home" class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">JoanMiam</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+
+                <!-- Menu Desktop -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Botón Hamburguesa -->
+                <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================= -->
+    <!-- SECCIÓN HERO -->
+    <!-- ========================= -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Saludo Animado -->
+                <p class="hero-greeting">👋 Hola, soy</p>
+
+                <!-- Nombre Principal -->
+                <h1 class="hero-title">
+                    <span class="hero-name" data-text="Joan Miam">Joan Miam</span>
+                </h1>
+
+                <!-- Rol con Efecto Typing -->
+                <h2 class="hero-subtitle">
+                    <span class="typing-text">Desarrollador de Software</span>
+                </h2>
+
+                <!-- Descripción -->
+                <p class="hero-description">
+                    Apasionado por crear soluciones digitales innovadoras.
+                    Transformando ideas en código y diseño en experiencias.
+                </p>
+
+                <!-- Botones de Acción -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver Proyectos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contáctame</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="hero-social">
+                    <a href="https://github.com/JoanMiam" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joan-miam-55614a257" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/solutions_in_software_hardware?igsh=d2hucHp4eXZhZWtx&utm_source=qr"
+                        target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/@jowdev-r9h?si=zvfc5YCv3DOSrYYq" target="_blank"
+                        rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1DgRpVzZj3/?mibextid=wwXIfr" target="_blank"
+                        rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Decoración Visual -->
+            <div class="hero-decoration">
+                <div class="decoration-circle circle-1"></div>
+                <div class="decoration-circle circle-2"></div>
+                <div class="decoration-circle circle-3"></div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Desplazar hacia abajo">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll</p>
+        </a>
+    </section>
+
+    <!-- ========================= -->
+    <!-- SECCIÓN SOBRE MÍ -->
+    <!-- ========================= -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">01.</span>
+                    Sobre Mí
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-content">
+                <!-- Imagen de Perfil -->
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="assets/images/fotoperfil.JPG" alt="Joan Miam - Foto de perfil">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Información Personal -->
+                <div class="about-info" data-aos="fade-left">
+                    <h3 class="about-subtitle">Un poco sobre mí</h3>
+                    <p class="about-text">
+                        ¡Hola! Soy un <strong>Desarrollador de Software</strong> apasionado por
+                        la tecnología y la creación de soluciones digitales que marquen la diferencia.
+                    </p>
+                    <p class="about-text">
+                        Mi enfoque está en el <strong>desarrollo web full-stack</strong>, con especial interés
+                        en crear interfaces de usuario intuitivas y experiencias digitales memorables.
+                    </p>
+                    <p class="about-text">
+                        Me encanta aprender nuevas tecnologías y mantenerme actualizado con las últimas
+                        tendencias en desarrollo de software. Cuando no estoy programando, puedes encontrarme
+                        leyendo documentación técnica o trabajando en proyectos personales.
+                    </p>
+
+                    <!-- Tecnologías que uso -->
+                    <div class="about-tech">
+                        <h4>Tecnologías que uso:</h4>
+                        <ul class="tech-list">
+                            <li><i class="fas fa-code"></i> JavaScript (ES6+)</li>
+                            <li><i class="fas fa-code"></i> Python</li>
+                            <li><i class="fas fa-code"></i> HTML & CSS</li>
+                            <li><i class="fas fa-code"></i> React.js</li>
+                            <li><i class="fas fa-code"></i> Node.js</li>
+                            <li><i class="fas fa-code"></i> Git & GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- SECCIÓN PROYECTOS -->
+    <!-- ========================= -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">02.</span>
+                    Proyectos Destacados
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn carousel-prev" aria-label="Proyecto anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <!-- Proyecto 1 -->
+                        <article class="project-card carousel-slide" data-aos="fade-up">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/600x400/764ba2/ffffff?text=Proyecto+1"
+                                    alt="Proyecto 1">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/JoanMiam/proyecto1" target="_blank"
+                                            rel="noopener noreferrer" class="project-link"
+                                            aria-label="Ver código en GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer" class="project-link"
+                                            aria-label="Ver demo en vivo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">E-Commerce Platform</h3>
+                                <p class="project-description">
+                                    Plataforma de comercio electrónico completa con carrito de compras,
+                                    sistema de pagos y panel de administración.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Proyecto 2 -->
+                        <article class="project-card carousel-slide" data-aos="fade-up">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/600x400/667eea/ffffff?text=Proyecto+2"
+                                    alt="Proyecto 2">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/JoanMiam/proyecto2" target="_blank"
+                                            rel="noopener noreferrer" class="project-link"
+                                            aria-label="Ver código en GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer" class="project-link"
+                                            aria-label="Ver demo en vivo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Task Management App</h3>
+                                <p class="project-description">
+                                    Aplicación de gestión de tareas con drag & drop,
+                                    notificaciones y sincronización en tiempo real.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Tailwind</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Proyecto 3 -->
+                        <article class="project-card carousel-slide" data-aos="fade-up">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/600x400/f093fb/ffffff?text=Proyecto+3"
+                                    alt="Proyecto 3">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/JoanMiam/proyecto3" target="_blank"
+                                            rel="noopener noreferrer" class="project-link"
+                                            aria-label="Ver código en GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer" class="project-link"
+                                            aria-label="Ver demo en vivo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Weather Dashboard</h3>
+                                <p class="project-description">
+                                    Dashboard del clima con pronóstico de 7 días,
+                                    mapas interactivos y alertas meteorológicas.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">API REST</span>
+                                    <span class="tag">Chart.js</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button class="carousel-btn carousel-next" aria-label="Proyecto siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Dots de navegación -->
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- SECCIÓN CONTACTO -->
+    <!-- ========================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">03.</span>
+                    Contacto
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-content">
+                <!-- Información de Contacto -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h3 class="contact-title">¡Hablemos!</h3>
+                    <p class="contact-description">
+                        Estoy siempre abierto a nuevas oportunidades, colaboraciones
+                        o simplemente una charla sobre tecnología. No dudes en contactarme.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <a href="mailto:joanchan082@gmail.com">joanchan082@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Ubicación</h4>
+                                <p>Mérida, Yucatán</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+529981447597">+52 998 144 7597</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="contact-social">
+                        <h4>Encuéntrame en:</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/JoanMiam" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/joan-miam-55614a257" target="_blank"
+                                rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/solutions_in_software_hardware?igsh=d2hucHp4eXZhZWtx&utm_source=qr"
+                                target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://youtube.com/@jowdev-r9h?si=zvfc5YCv3DOSrYYq" target="_blank"
+                                rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/1DgRpVzZj3/?mibextid=wwXIfr" target="_blank"
+                                rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de Contacto -->
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre completo"
+                                required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com"
+                                required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="Asunto del mensaje" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="form-input form-textarea"
+                                placeholder="Escribe tu mensaje aquí..." rows="5" required
+                                aria-required="true"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Mensaje de éxito/error (oculto por defecto) -->
+                    <div class="form-message" id="formMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Diseñado y desarrollado por <strong>Joan Miam</strong>
+                </p>
+                <p class="footer-copyright">
+                    © 2026 Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
