@@ -324,7 +324,7 @@ function initCarousel() {
     function startAutoplay() {
         autoplayInterval = setInterval(() => {
             goToSlide(currentIndex + 1);
-        }, 5000);
+        }, ANIMATION_CONFIG.carouselAutoplayInterval);
     }
 
     function resetAutoplay() {
@@ -499,8 +499,8 @@ function initContactForm() {
         submitButton.innerHTML = '<span>Enviando...</span><i class="fas fa-spinner fa-spin"></i>';
 
         try {
-            // Enviar con EmailJS
-            await emailjs.send('service_06d3ujg', 'template_um8398s', {
+            // Enviar con EmailJS usando configuración centralizada
+            await emailjs.send(EMAIL_CONFIG.serviceId, EMAIL_CONFIG.templateId, {
                 from_name: formData.name,
                 from_email: formData.email,
                 subject: formData.subject,

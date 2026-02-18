@@ -36,15 +36,14 @@
 
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>
-        emailjs.init('D-Lk7Hwfa0-o1Ep8p');
-    </script>
 </head>
 
 <body>
-    <!-- Efectos Visuales -->
-    <canvas id="particles-canvas"></canvas>
-    <div class="cursor-glow"></div>
+    <!-- ========================================
+         EFECTOS VISUALES DE FONDO
+         ======================================== -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
     <!-- ========================= -->
     <!-- NAVEGACIÓN -->
@@ -258,7 +257,7 @@
                             <div class="project-info">
                                 <h3 class="project-title">🐾 Sistema de Gestión Veterinaria</h3>
                                 <p class="project-description">
-                                    Aplicación de escritorio para gestionar inventario de medicamentos veterinarios. 
+                                    Aplicación de escritorio para gestionar inventario de medicamentos veterinarios.
                                     Incluye control de ventas, apartados, alertas de caducidad y exportación a CSV.
                                 </p>
                                 <div class="project-tags">
@@ -488,12 +487,17 @@
         </div>
     </footer>
 
-    <!-- Botón Scroll to Top -->
+    <!-- ========================================
+         BOTÓN SCROLL TO TOP
+         ======================================== -->
     <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- JavaScript -->
+    <!-- ========================================
+         SCRIPTS
+         ======================================== -->
+    <script src="js/config.js"></script>
     <script src="js/main.js"></script>
 </body>
 
