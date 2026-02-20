@@ -856,16 +856,21 @@ section {
     overflow: hidden;
     border-radius: var(--radius-lg);
     flex: 1;
+    width: 100%;
 }
 
 .carousel-track {
     display: flex;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
 }
 
 .carousel-slide {
     min-width: 100%;
+    width: 100%;
     flex-shrink: 0;
+    flex-grow: 0;
+    box-sizing: border-box;
 }
 
 .carousel-btn {
